@@ -1,0 +1,5 @@
+### Force all C level elements to 0
+['All Logs']=C:0;
+
+### Set Records element to last run process value ###
+['Records']=C:DB('ProcessLogs',ELCOMP('zProcessLogs',!zProcessLogs,ELCOMPN('zProcessLogs',!zProcessLogs)),'Records') ;
