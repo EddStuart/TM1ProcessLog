@@ -1,5 +1,5 @@
 # TM1ProcessLog
-Boilerplate code for ProcessLog cube
+Cognos TM1 Boilerplate code for ProcessLog cube
 
 Taken from IBM Developerworks document available:
 
