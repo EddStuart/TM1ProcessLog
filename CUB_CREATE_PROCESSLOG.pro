@@ -5,27 +5,27 @@
 ###############################################
 # Declare Variables
 ###############################################
-sProcessLog = 'zProcessLogs' ;
-sProcessMeas = 'zProcessLogMeasures' ;
-sCube = 'ProcessLogs' ;
+sProcessLog = 'zProcessLogs';
+sProcessMeas = 'zProcessLogMeasures';
+sCube = 'ProcessLogs';
 
 ###############################################
 # Create Dimensions and add Elements
 ###############################################
-DIMENSIONCREATE ( sProcessLog ) ;
-DIMENSIONCREATE ( sProcessMeas ) ;
+DIMENSIONCREATE(sProcessLog);
+DIMENSIONCREATE(sProcessMeas);
 
-DIMENSIONELEMENTINSERT ( sProcessLog, '', 'All Logs', 'C' ) ;
+DIMENSIONELEMENTINSERT(sProcessLog, '', 'All Logs', 'C');
 
-DIMENSIONELEMENTINSERT ( sProcessMeas, '', 'ProcessName', 'S' ) ;
-DIMENSIONELEMENTINSERT ( sProcessMeas, '', 'StartTime', 'S' ) ;
-DIMENSIONELEMENTINSERT ( sProcessMeas, '', 'FinishTime', 'S' ) ;
-DIMENSIONELEMENTINSERT ( sProcessMeas, '', 'ElapsedTime', 'S' ) ;
-DIMENSIONELEMENTINSERT ( sProcessMeas, '', 'Status', 'S' ) ;
-DIMENSIONELEMENTINSERT ( sProcessMeas, '', 'Records', 'N' ) ;
+DIMENSIONELEMENTINSERT(sProcessMeas, '', 'ProcessName', 'S');
+DIMENSIONELEMENTINSERT(sProcessMeas, '', 'StartTime', 'S');
+DIMENSIONELEMENTINSERT(sProcessMeas, '', 'FinishTime', 'S');
+DIMENSIONELEMENTINSERT(sProcessMeas, '', 'ElapsedTime', 'S');
+DIMENSIONELEMENTINSERT(sProcessMeas, '', 'Status', 'S');
+DIMENSIONELEMENTINSERT(sProcessMeas, '', 'Records', 'N');
 
 ##############################################
 # Create ProcessLogs cube
 ##############################################
 
-CUBECREATE ( sCube, sProcessLog, sProcessMeas ) ;
+CUBECREATE(sCube, sProcessLog, sProcessMeas);
